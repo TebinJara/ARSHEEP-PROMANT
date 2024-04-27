@@ -1,0 +1,43 @@
+.info-profile-contain{
+    margin: 0;
+    padding: 8px;
+    background-color: #737373; 
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow:
+    inset 1px 1px 4px #303030,   
+    inset -1px -1px 4px #9d9c9c; 
+    .img-profile{
+        max-width: 70px;
+        max-height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #3376ad;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        border: 2px solid #4a4b4e;
+        transition: 300ms;
+        box-shadow:
+         2px 2px 5px #303030;
+        img{
+            display: block;
+            width: 80%;
+            height: auto;
+            transition: 300ms;
+        }
+        img:hover{
+            cursor: pointer;
+        }
+        
+        
+    }
+    p{
+        margin: 3px;
+    }
+    
+}
