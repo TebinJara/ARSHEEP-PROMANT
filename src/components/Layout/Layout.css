@@ -1,33 +1,30 @@
-.layout {
-  margin: 0;
-  padding: 0;
+.layout-1{
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-areas:
-    "header header header header"
-    "nav nav nav nav"
-    "content content content content"
-    "footer footer footer footer";
+  /*grid-template-rows: 60px 100% 60px;*/
+  grid-template-areas: 
+  "header header header" 
+  "content content content" 
+  "footer footer footer";
+  
 }
 
 .header {
   grid-area: header;
   margin: 0;
-}
 
-.nav {
-    width: 100%;
-  grid-area: nav;
-  margin: 0;
+  box-sizing: border-box;
 }
 
 
 .content {
   grid-area: content;
   margin: 0;
+
+  box-sizing: border-box;
 }
 
 .footer{
     grid-area: footer;
-  margin: 0;
+    
+    box-sizing: border-box;
 }

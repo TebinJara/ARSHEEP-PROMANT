@@ -1,18 +1,17 @@
 .info-profile-contain{
-    margin: 0;
-    padding: 8px;
-    background-color: #737373; 
-    border-radius: 5px;
+    margin: 3px;
+    padding: 3px;
+  
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    box-shadow:
-    inset 1px 1px 4px #303030,   
-    inset -1px -1px 4px #9d9c9c; 
+
+    box-sizing: border-box;
     .img-profile{
-        max-width: 70px;
-        max-height: 70px;
+        max-width: 100px;
+        max-height: 100px;
+        margin-top: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -20,10 +19,9 @@
         align-items: center;
         justify-content: center;
         border-radius: 5px;
-        border: 2px solid #4a4b4e;
+        border: 2px solid #C2D971;
         transition: 300ms;
-        box-shadow:
-         2px 2px 5px #303030;
+
         img{
             display: block;
             width: 80%;
@@ -36,8 +34,11 @@
         
         
     }
-    p{
+    p{ 
+        color: #C2D971;
         margin: 3px;
+        font-weight: lighter;
+        font-size: 12px;
     }
     
 }

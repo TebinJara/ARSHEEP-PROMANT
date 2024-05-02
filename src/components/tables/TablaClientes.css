@@ -1,0 +1,189 @@
+/* Estilo general para el contenedor de la tabla, establece fuente, color y disposición */
+.clientes-container {
+  padding: 10px;
+  width: 100%;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Asegura que los elementos estén alineados al inicio */
+  button {
+    padding: 8px 20px; /* Ajuste para que todos los botones tengan el mismo tamaño */
+    margin: 5px 0;
+    border: 2px solid black;
+    background-color: #4a4b4e;
+    color: #c2d971;
+    cursor: pointer;
+    transition: all 0.3s; /* Transición para color de fondo y borde */
+  }
+  button:hover {
+    background-color: #c2d971;
+    color: black;
+    border: 2px solid #c2d971;
+  }
+
+}
+
+.info-cliente-see{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.buttons-data-cliente button{
+    width: 70%;
+}
+.clientes-container-2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-areas: "tabla info-cliente";
+  height: 100%;
+}
+
+.info-cliente {
+  grid-area: info-cliente;
+  padding: 10px;
+  background-color: #4a4b4e;
+  margin-left: 5px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+  strong {
+    color: #c2d971;
+  }
+  p {
+    background: rgba(0, 0, 0, 0.137);
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 3px;
+    text-align: start;
+  }
+  .img-profile-cliente {
+    max-width: 150px;
+    max-height: 150px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c2d971;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid #c2d971;
+    transition: 300ms;
+    box-sizing: border-box;
+  }
+  img {
+    width: 160px;
+    max-height: 160px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3376ad;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid #c2d971;
+    transition: 300ms;
+  }
+}
+
+.clientes-container-left {
+  grid-area: tabla;
+}
+
+/* Estilos específicos para la tabla, incluyendo color de fondo y comportamiento de borde */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #4a4b4e;
+}
+
+/* Estilo para la cabecera de la tabla con color de fondo y alineación de texto */
+.table thead tr {
+  background-color: #c2d971;
+  color: black;
+  text-align: left;
+}
+
+/* Estilo común para celdas y encabezados, con ajustes de borde y alineación de texto */
+.table th,
+.table td {
+  padding: 5px;
+ 
+  text-align: left;
+}
+
+/* Estilo para filas impares del cuerpo de la tabla para mejorar la legibilidad */
+.table tbody tr:nth-child(odd) {
+  background: rgba(0, 0, 0, 0.137);
+}
+
+.table tbody tr:nth-child(odd):hover {
+    background-color:#c2d971;
+    cursor: pointer;
+    color: black;
+    
+  }
+
+.table-row:hover  {
+    background-color:#c2d971; /* Cambia a un color claro cuando el cursor pasa sobre una fila */
+    cursor: pointer;
+    color: black;
+}
+
+/* Estilos para el contenedor de filtrado, con diseño flexible y ajustes de color */
+.filter-container {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #4a4b4e;
+  color: white;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilos unificados para los elementos select e input dentro del contenedor de filtrado */
+.filter-container select,
+.filter-container input {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: 1px solid white;
+  background-color: #333;
+  color: white;
+  font-size: 12px;
+}
+
+/* Estilos para los botones dentro del contenedor de filtrado, incluyendo interacción y dimensiones */
+.filter-container button {
+  padding: 8px 20px; /* Ajuste para que todos los botones tengan el mismo tamaño */
+  margin: 0 10px;
+  border: 2px solid black;
+  background-color: #4a4b4e;
+  color: #c2d971;
+  cursor: pointer;
+  transition: all 0.3s; /* Transición para color de fondo y borde */
+}
+
+/* Estilo para efecto hover en botones, intensificando el color y modificando el borde */
+.filter-container button:hover {
+  background-color: #c2d971;
+  color: black;
+  border: 2px solid #c2d971;
+}
+
+/* Estilo para campos de entrada y selección enfocados, destacando el borde */
+.filter-container select:focus,
+.filter-container input:focus {
+  border-color: #c2d971;
+  outline: none;
+}
